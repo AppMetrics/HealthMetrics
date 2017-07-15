@@ -60,7 +60,7 @@ var coverallsToken              = Context.EnvironmentVariable("COVERALLS_REPO_TO
 var openCoverFilter				= "+[App.Metrics*]* -[xunit.*]* -[*.Facts]*";
 var openCoverExcludeFile        = "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs";
 var coverIncludeFilter			= "+:App.Metrics*";
-var coverExcludeFilter			= "-:*.Facts";
+var coverExcludeFilter			= "-:*.Facts -:*.FactsCommon";
 var excludeFromCoverage			= "*.ExcludeFromCodeCoverage*";
 string versionSuffix			= null;
 
