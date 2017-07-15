@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26621.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D805782-756E-4C98-B22E-F502BEE95318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{31A4DDB1-952E-4EED-96EF-29C669279A86}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		AppMetrics.ruleset = AppMetrics.ruleset
+		appveyor.yml = appveyor.yml
+		stylecop.json = stylecop.json
+		version.props = version.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DD2E4647-7125-4CE3-9BA5-B45A26113A31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cake", "Cake", "{E1A943F7-5493-4B64-A448-3E9EEA582E20}"
+	ProjectSection(SolutionItems) = preProject
+		build.cake = build.cake
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		build_travis.sh = build_travis.sh
+		tools\packages.config = tools\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Git", "Git", "{4199989A-27B6-4A6A-99C2-1AF6B01DA5EB}"
+	ProjectSection(SolutionItems) = preProject
+		GitReleaseManager.yaml = GitReleaseManager.yaml
+		ISSUE_TEMPLATE.md = ISSUE_TEMPLATE.md
+		PULL_REQUEST_TEMPLATE.md = PULL_REQUEST_TEMPLATE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sandbox", "sandbox", "{887BC5A0-8ED7-4460-851D-5EFC4AE828DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{82BE5E48-3A8F-4B09-8A3A-03448C6D2B4D}"
+	ProjectSection(SolutionItems) = preProject
+		build\common.props = build\common.props
+		build\dependencies.props = build\dependencies.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.HealthMetrics", "src\App.Metrics.HealthMetrics\App.Metrics.HealthMetrics.csproj", "{1DC5F5DB-49DC-4E3C-94CA-8541E4A593DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.HealthMetrics.Facts", "test\App.Metrics.HealthMetrics.Facts\App.Metrics.HealthMetrics.Facts.csproj", "{2582392C-1C23-4642-9878-9DC314423180}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.FactsCommon", "test\App.Metrics.FactsCommon\App.Metrics.FactsCommon.csproj", "{06F1F787-072E-473B-9978-2A5DD83C755F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Metrics.Sandbox", "sandbox\App.Metrics.Sandbox\App.Metrics.Sandbox.csproj", "{275C270E-4DC0-47B8-B401-CD30637636C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DC5F5DB-49DC-4E3C-94CA-8541E4A593DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC5F5DB-49DC-4E3C-94CA-8541E4A593DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC5F5DB-49DC-4E3C-94CA-8541E4A593DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC5F5DB-49DC-4E3C-94CA-8541E4A593DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2582392C-1C23-4642-9878-9DC314423180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2582392C-1C23-4642-9878-9DC314423180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2582392C-1C23-4642-9878-9DC314423180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2582392C-1C23-4642-9878-9DC314423180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06F1F787-072E-473B-9978-2A5DD83C755F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06F1F787-072E-473B-9978-2A5DD83C755F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06F1F787-072E-473B-9978-2A5DD83C755F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06F1F787-072E-473B-9978-2A5DD83C755F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{275C270E-4DC0-47B8-B401-CD30637636C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{275C270E-4DC0-47B8-B401-CD30637636C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{275C270E-4DC0-47B8-B401-CD30637636C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{275C270E-4DC0-47B8-B401-CD30637636C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E1A943F7-5493-4B64-A448-3E9EEA582E20} = {31A4DDB1-952E-4EED-96EF-29C669279A86}
+		{4199989A-27B6-4A6A-99C2-1AF6B01DA5EB} = {31A4DDB1-952E-4EED-96EF-29C669279A86}
+		{82BE5E48-3A8F-4B09-8A3A-03448C6D2B4D} = {31A4DDB1-952E-4EED-96EF-29C669279A86}
+		{1DC5F5DB-49DC-4E3C-94CA-8541E4A593DD} = {2D805782-756E-4C98-B22E-F502BEE95318}
+		{2582392C-1C23-4642-9878-9DC314423180} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}
+		{06F1F787-072E-473B-9978-2A5DD83C755F} = {DD2E4647-7125-4CE3-9BA5-B45A26113A31}
+		{275C270E-4DC0-47B8-B401-CD30637636C0} = {887BC5A0-8ED7-4460-851D-5EFC4AE828DE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {492C97B1-706A-4357-B3F7-EFB6AFB1F6C6}
+	EndGlobalSection
+EndGlobal
